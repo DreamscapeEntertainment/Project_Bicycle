@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\CardCreator\Card.cs" />
     <Compile Include="Assets\Scripts\CardCreator\CardClass.cs" />
     <Compile Include="Assets\Scripts\CardCreator\CardCreator.cs" />
+    <Compile Include="Assets\Scripts\CardCreator\CardDatabase.cs" />
     <Compile Include="Assets\Scripts\CardCreator\CardType.cs" />
     <Compile Include="Assets\Scripts\TestGUI\TestDirectory.cs" />
     <Compile Include="Assets\Scripts\TestGUI\Weapon.cs" />
