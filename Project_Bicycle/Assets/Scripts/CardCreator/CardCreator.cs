@@ -3,27 +3,45 @@ using UnityEngine;
 
 public class CardCreator : EditorWindow {
 
-    string aString = "Hello World!";
-    bool toggled;
-    bool myBoolean = true;
-    float aFloat = 1.23f;
+    Card c;
     GUILayoutOption[] noOptions = new GUILayoutOption[0];
 
-    [MenuItem("Window/Card Creator")]
-    public static void ShowWindow()
-    {
-        EditorWindow.GetWindow(typeof(CardCreator));
+    [MenuItem("Dreamscape/Cards/Card Creator")]
+    public static void Init() {
+        CardCreator window = EditorWindow.GetWindow<CardCreator>("Card Creator");
+        window.minSize = new Vector2(600, 400);
+        window.Show();
     }
 
-    private void OnGUI()
-    {
-        GUILayout.Label("Base Label", EditorStyles.boldLabel);
-        aString = EditorGUILayout.TextField("Text Field", aString);
+    private void OnEnable() {
+        if(c == null)
+            c = Card.CreateInstance<Card>();
+    }
 
-        toggled = EditorGUILayout.BeginToggleGroup("Optional Settings", toggled);
-        myBoolean = EditorGUILayout.Toggle("Toggle", myBoolean);
-        aFloat = EditorGUILayout.Slider("Slidey Boi", aFloat, -3, 3, noOptions);
-        EditorGUILayout.EndToggleGroup();
+    private void OnGUI() {
+        EditorGUILayout.BeginHorizontal(GUILayout.ExpandWidth(true));
+
+        DisplayCreator();
+
+        EditorGUILayout.EndHorizontal();
+    }
+
+    void DisplayCreator() {
+
+        EditorGUILayout.BeginVertical(GUILayout.ExpandHeight(true));
+
+        EditorGUILayout.LabelField("Card Data", EditorStyles.boldLabel);
+        c.cardName = EditorGUILayout.TextField("Card Name", c.cardName, GUILayout.MaxWidth(400));
+        c.cardClass = (CardClass)EditorGUILayout.EnumPopup("Card Class", c.cardClass, GUILayout.MaxWidth(400));
+        c.type = (CardType)EditorGUILayout.EnumPopup("Card Type", c.type, GUILayout.MaxWidth(400));
+        c.description = EditorGUILayout.TextField("Card Description", c.description, GUILayout.MaxWidth(400), GUILayout.MaxHeight(60));
+
+        c.isInvoke = EditorGUILayout.Toggle("Invoke?", c.isInvoke);
+        c.isEcho = EditorGUILayout.Toggle("Echo?", c.isEcho);
+        EditorGUILayout.Space();
+
+        EditorGUILayout.EndVertical();
+
     }
 
 }

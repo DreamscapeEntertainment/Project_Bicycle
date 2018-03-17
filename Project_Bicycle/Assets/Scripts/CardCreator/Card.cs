@@ -18,6 +18,16 @@ using UnityEngine;
 public class Card : ScriptableObject {
 
     public string cardName;
-    public string[] randomFields;
+    public CardClass cardClass;
+    public CardType type;
+    public string description;
+
+    public bool isInvoke;
+    public bool isEcho;
+
+    public Card() {
+        cardName = "";
+
+    }
 
 }
