@@ -496,7 +496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yellow
+  m_Text: White
 --- !u!222 &194296036
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 0, g: 1, b: 0, a: 0}
   - {r: 0, g: 0, b: 1, a: 0}
-  - {r: 1, g: 0.8896551, b: 0, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
   hexGrid: {fileID: 794293201}
 --- !u!1 &794293196
 GameObject:
@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 797789308}
   - component: {fileID: 797789309}
   m_Layer: 5
-  m_Name: Toggle Yellow
+  m_Name: Toggle White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

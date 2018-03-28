@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\CardCreator\CardCreator.cs" />
     <Compile Include="Assets\Scripts\MapWork\HexCell.cs" />
     <Compile Include="Assets\Scripts\MapWork\HexCoordinates.cs" />
+    <Compile Include="Assets\Scripts\MapWork\HexDirection.cs" />
     <Compile Include="Assets\Scripts\MapWork\HexGrid.cs" />
     <Compile Include="Assets\Scripts\MapWork\HexMapEditor.cs" />
     <Compile Include="Assets\Scripts\MapWork\HexMesh.cs" />
