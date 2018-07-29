@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Bicycle", "Project_Bicycle.csproj", "{F81713A6-B50C-16D4-8758-F436BD4A1F56}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Bicycle", "Assembly-CSharp.csproj", "{EB328484-F754-D626-5E29-DBC0E57F639D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F81713A6-B50C-16D4-8758-F436BD4A1F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F81713A6-B50C-16D4-8758-F436BD4A1F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F81713A6-B50C-16D4-8758-F436BD4A1F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F81713A6-B50C-16D4-8758-F436BD4A1F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB328484-F754-D626-5E29-DBC0E57F639D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB328484-F754-D626-5E29-DBC0E57F639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB328484-F754-D626-5E29-DBC0E57F639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB328484-F754-D626-5E29-DBC0E57F639D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/_Scenes/CardCreator.unity
-  isLoaded: 1
-  isActive: 1
