@@ -36,3 +36,9 @@ sysinfo.txt
 Project_Bicycle/Library/
 
 Project_Bicycle/Temp/
+
+Project_Bicycle/\.vs/
+
+Project_Bicycle/obj/
+
+*.asset
