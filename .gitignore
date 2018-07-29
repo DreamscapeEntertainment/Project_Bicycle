@@ -34,3 +34,5 @@ sysinfo.txt
 *.unitypackage
 
 Project_Bicycle/Library/
+
+Project_Bicycle/Temp/
