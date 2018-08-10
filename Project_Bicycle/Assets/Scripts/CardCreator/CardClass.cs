@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public enum CardClass {
+// public enum CardClass {
 
-    RedClass = 0,
-    GreenClass,
-    BlueClass
+//     RedClass = 0,
+//     GreenClass,
+//     BlueClass
 
-}
+// }
